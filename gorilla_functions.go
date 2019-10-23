@@ -80,7 +80,6 @@ type Route struct {
 type Routes []Route
 
 var routes = Routes{
-	// ヘルスチェック用API
 	Route{
 		"Index",
 		"GET",
@@ -88,7 +87,6 @@ var routes = Routes{
 		indexHandler,
 	},
 
-	// コマンド送信用ウェブソケット
 	Route{
 		"GetHandler",
 		"GET",
